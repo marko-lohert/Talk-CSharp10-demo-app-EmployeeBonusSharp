@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+	  <PackageLicenseFile>..\..\..\..\LICENSE</PackageLicenseFile>
+	  <Authors>Marko Lohert</Authors>
+	  <Company>Marko Lohert</Company>
   </PropertyGroup>
 
   <ItemGroup>

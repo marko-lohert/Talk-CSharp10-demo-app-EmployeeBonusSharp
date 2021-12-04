@@ -1,8 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
+    <PackageLicenseFile>..\..\..\..\LICENSE</PackageLicenseFile>
+    <Authors>Marko Lohert</Authors>
+    <Company>Marko Lohert</Company>
   </PropertyGroup>
 
   <ItemGroup>
