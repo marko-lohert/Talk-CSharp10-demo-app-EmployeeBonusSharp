@@ -11,9 +11,12 @@ namespace EmployeeBonusSharp.Client.Pages
         public List<Employee> Employees { get; set; }
         public CompanyInfo Company { get; set; }
         public string BonusCurrencyName { get; set; }
+        public AppSettings Settings { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
+            Settings = new AppSettings(displayColumnDateOfEmployment: false, displayColumnCertificates: true);
+
             Employees = await Http.GetFromJsonAsync<List<Employee>>("Employee/GetAllEmployees");
             Company = await Http.GetFromJsonAsync<CompanyInfo>("Company/GetInfo");
             BonusCurrencyName = await Http.GetStringAsync($"Currency/GetName?currencyISOCode={Company.BonusCurrencyISOCode}");
