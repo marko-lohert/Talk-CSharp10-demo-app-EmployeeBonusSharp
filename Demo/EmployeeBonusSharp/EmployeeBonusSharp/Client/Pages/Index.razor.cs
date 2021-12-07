@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http.Json;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace EmployeeBonusSharp.Client.Pages;
@@ -25,7 +26,7 @@ public partial class Index
 
     public void CalculateBonus()
     {
-        Func<Employee, int> YearsOfEmployment = employee => DateTime.Now.Subtract(employee.DateOfEmployment).Days / 365;
+        var YearsOfEmployment = [MethodImpl(MethodImplOptions.AggressiveOptimization)] (Employee employee) => DateTime.Now.Subtract(employee.DateOfEmployment).Days / 365;
 
         foreach (Employee employee in Employees)
         {
