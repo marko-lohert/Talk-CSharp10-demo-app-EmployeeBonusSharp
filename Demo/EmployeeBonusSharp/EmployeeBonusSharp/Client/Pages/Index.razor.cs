@@ -22,7 +22,7 @@ namespace EmployeeBonusSharp.Client.Pages
             BonusCurrencyName = await Http.GetStringAsync($"Currency/GetName?currencyISOCode={Company.BonusCurrencyISOCode}");
         }
 
-        public void RecalculateBonus()
+        public void CalculateBonus()
         {
             Func<Employee, int> YearsOfEmployment = employee => DateTime.Now.Subtract(employee.DateOfEmployment).Days / 365;
 
