@@ -31,15 +31,15 @@ namespace EmployeeBonusSharp.Client.Pages
             {
                 employee.EmployeeBonus.LoyaltyPoints = YearsOfEmployment(employee) * Company.CompanyBonusScheme.LoyaltyPointsPerYear;
 
-                if (employee is not Employee { Certificates: { Count: 0 } })
+                if (employee is not Employee { Certificates.Count: 0 })
                     employee.EmployeeBonus.CerificatePoints = employee.Certificates.Count * Company.CompanyBonusScheme.PointsPerCerificate;
 
-                if (employee is not Employee { AllPerformanceReviewByManager: { Count: 0 } })
+                if (employee is not Employee { AllPerformanceReviewByManager.Count: 0 })
                 {
                     employee.EmployeeBonus.PointsPerformanceReview = employee switch
                     {
-                        { LastPerformanceReviewByManager: { Mark: 4 } } => Company.CompanyBonusScheme.PointsPerformanceReviewMark4,
-                        { LastPerformanceReviewByManager: { Mark: 5 } } => Company.CompanyBonusScheme.PointsPerformanceReviewMark5,
+                        { LastPerformanceReviewByManager.Mark: 4 } => Company.CompanyBonusScheme.PointsPerformanceReviewMark4,
+                        { LastPerformanceReviewByManager.Mark: 5 } => Company.CompanyBonusScheme.PointsPerformanceReviewMark5,
                         _ => 0
                     };
                 }
