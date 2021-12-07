@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBonusSharp.Server", "EmployeeBonusSharp\Server\EmployeeBonusSharp.Server.csproj", "{B9D97FE0-3122-4EC1-8D10-474BC2FBFC6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeBonusSharp.Server", "EmployeeBonusSharp\Server\EmployeeBonusSharp.Server.csproj", "{B9D97FE0-3122-4EC1-8D10-474BC2FBFC6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBonusSharp.Client", "EmployeeBonusSharp\Client\EmployeeBonusSharp.Client.csproj", "{A46F3A24-4C64-4129-9905-D6631E07920C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeBonusSharp.Client", "EmployeeBonusSharp\Client\EmployeeBonusSharp.Client.csproj", "{A46F3A24-4C64-4129-9905-D6631E07920C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeBonusSharp.Shared", "EmployeeBonusSharp\Shared\EmployeeBonusSharp.Shared.csproj", "{2E951F51-E3C6-43CF-B1ED-DF48A328A5F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeBonusSharp.Shared", "EmployeeBonusSharp\Shared\EmployeeBonusSharp.Shared.csproj", "{2E951F51-E3C6-43CF-B1ED-DF48A328A5F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
