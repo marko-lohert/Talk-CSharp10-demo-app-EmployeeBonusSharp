@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace EmployeeBonusSharp.Shared
+﻿namespace EmployeeBonusSharp.Shared
 {
     public record PerformanceReviewByManager
     {

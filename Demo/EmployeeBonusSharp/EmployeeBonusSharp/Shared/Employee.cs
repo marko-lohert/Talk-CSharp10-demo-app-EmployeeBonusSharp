@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace EmployeeBonusSharp.Shared
+﻿namespace EmployeeBonusSharp.Shared
 {
     public class Employee
     {
