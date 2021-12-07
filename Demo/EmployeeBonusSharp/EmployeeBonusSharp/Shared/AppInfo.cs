@@ -9,6 +9,6 @@ public record AppInfo
 
     public string GetCompleteAboutMessage()
     {
-        return BasicInfo + $"\nversion 2021.1";
+        return BasicInfo + $"  | {AppName} version 2021.1";
     }
 }
