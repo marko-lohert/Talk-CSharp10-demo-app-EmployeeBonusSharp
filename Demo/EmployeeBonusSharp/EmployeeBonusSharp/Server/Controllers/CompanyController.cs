@@ -1,9 +1,4 @@
-﻿using EmployeeBonusSharp.Server.DAL;
-using EmployeeBonusSharp.Shared;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-
-namespace EmployeeBonusSharp.Server.Controllers
+﻿namespace EmployeeBonusSharp.Server.Controllers
 {
     [ApiController]
     [Route("[controller]")]

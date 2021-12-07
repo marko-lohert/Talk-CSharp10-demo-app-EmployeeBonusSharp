@@ -1,6 +1,4 @@
-﻿using EmployeeBonusSharp.Shared;
-
-namespace EmployeeBonusSharp.Server.DAL
+﻿namespace EmployeeBonusSharp.Server.DAL
 {
     public class CompanyDAO
     {

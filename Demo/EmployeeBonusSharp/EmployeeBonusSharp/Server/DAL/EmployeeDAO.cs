@@ -1,6 +1,4 @@
-﻿using EmployeeBonusSharp.Shared;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace EmployeeBonusSharp.Server.DAL
 {
