@@ -1,8 +1,7 @@
-﻿namespace EmployeeBonusSharp.Shared
+﻿namespace EmployeeBonusSharp.Shared;
+
+public record struct Money
 {
-    public record struct Money
-    {
-        public decimal Amount { get; set; }
-        public int CurrencyISOCode { get; set; }
-    }
+    public decimal Amount { get; set; }
+    public int CurrencyISOCode { get; set; }
 }

@@ -1,12 +1,11 @@
-﻿namespace EmployeeBonusSharp.Server.DAL
+﻿namespace EmployeeBonusSharp.Server.DAL;
+
+public class CurrencyDAO
 {
-    public class CurrencyDAO
+    public static string GetName(int currencyISOCode)
     {
-        public static string GetName(int currencyISOCode)
-        {
-            // Mock data.
-            // todo Read data from a database.
-            return (currencyISOCode == 840) ?  "USD" : "EUR";
-        }
+        // Mock data.
+        // todo Read data from a database.
+        return (currencyISOCode == 840) ? "USD" : "EUR";
     }
 }

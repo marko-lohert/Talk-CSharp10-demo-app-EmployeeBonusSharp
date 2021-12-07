@@ -1,20 +1,19 @@
-﻿namespace EmployeeBonusSharp.Server.Controllers
+﻿namespace EmployeeBonusSharp.Server.Controllers;
+
+[ApiController]
+[Route("[controller]")]
+public class CurrencyController : ControllerBase
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class CurrencyController : ControllerBase
+    private readonly ILogger<CurrencyController> _logger;
+
+    public CurrencyController(ILogger<CurrencyController> logger)
     {
-        private readonly ILogger<CurrencyController> _logger;
+        _logger = logger;
+    }
 
-        public CurrencyController(ILogger<CurrencyController> logger)
-        {
-            _logger = logger;
-        }
-
-        [HttpGet("GetName")]
-        public string GetName(int currencyISOCode)
-        {
-            return CurrencyDAO.GetName(currencyISOCode);
-        }
+    [HttpGet("GetName")]
+    public string GetName(int currencyISOCode)
+    {
+        return CurrencyDAO.GetName(currencyISOCode);
     }
 }
