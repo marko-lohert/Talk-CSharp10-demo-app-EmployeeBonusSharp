@@ -2,6 +2,12 @@
 {
     public struct AppSettings
     {
+        public AppSettings()
+        {
+            DisplayColumnDateOfEmployment = false;
+            DisplayColumnCertificates = true;
+        }
+
         public AppSettings(bool displayColumnDateOfEmployment, bool displayColumnCertificates)
         {
             DisplayColumnDateOfEmployment = displayColumnDateOfEmployment;

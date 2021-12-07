@@ -15,7 +15,8 @@ namespace EmployeeBonusSharp.Client.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            Settings = new AppSettings(displayColumnDateOfEmployment: false, displayColumnCertificates: true);
+            AppSettings defaultSettings = new();
+            Settings = defaultSettings with { DisplayColumnDateOfEmployment = true };
 
             Employees = await Http.GetFromJsonAsync<List<Employee>>("Employee/GetAllEmployees");
             Company = await Http.GetFromJsonAsync<CompanyInfo>("Company/GetInfo");
