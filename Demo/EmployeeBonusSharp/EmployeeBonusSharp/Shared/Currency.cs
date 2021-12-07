@@ -1,6 +1,6 @@
 ﻿namespace EmployeeBonusSharp.Shared
 {
-    public readonly struct Currency
+    public readonly record struct Currency
     {
         public Currency(int currencyISOCode, string name)
         {
